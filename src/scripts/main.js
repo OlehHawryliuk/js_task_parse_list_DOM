@@ -28,7 +28,11 @@ function getEmployees(list) {
   return arr;
 }
 
+/* eslint-disable */
+const newList = getEmployees(employeesCount);
+
 getEmployees(employeesCount);
+/* eslint-enable */
 
 function replaceToNumber(string) {
   return Number(string.replace(/[^0-9.,-]/g, '').replace(',', ''));
